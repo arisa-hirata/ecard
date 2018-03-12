@@ -597,7 +597,7 @@ header.onclick = function() {
 				styleLeft[i] = Math.random() * window.innerWidth;	
 			}
 
-            /* 横風 */   /*
+            /* 横風 */  
 
 			if(kazeCount >= 100 && kazeCount <= 110){ styleLeft[i] = styleLeft[i] + 1; }
 			else if(kazeCount >= 111 && kazeCount <= 120){ styleLeft[i] = styleLeft[i] + 3; }
