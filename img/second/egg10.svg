@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 190.3 242.5" style="enable-background:new 0 0 190.3 242.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:#FFB6EA;}
+	.st2{fill:#FF5AF3;}
+	.st3{fill:url(#egg1_1_);}
+</style>
+<pattern  x="-234.7" y="-128.8" width="65.8" height="92.3" patternUnits="userSpaceOnUse" id="New_Pattern_Swatch_2" viewBox="0 -92.3 65.8 92.3" style="overflow:visible;">
+	<g>
+		<rect y="-92.3" class="st0" width="65.8" height="92.3"/>
+		<rect y="-92.3" class="st1" width="65.8" height="92.3"/>
+		<polygon class="st2" points="65.8,-46.1 32.9,0 0,-46.1 32.9,-92.3 		"/>
+	</g>
+</pattern>
+<pattern  id="egg1_1_" xlink:href="#New_Pattern_Swatch_2" patternTransform="matrix(1 0 0 1 0 0)">
+</pattern>
+<path id="egg1" class="st3" d="M188.2,151.9c0,55.7-37.3,85.3-93,85.3s-93-29.6-93-85.3S39.8,1.7,95.5,1.7S188.2,96.2,188.2,151.9z"
+	/>
+</svg>

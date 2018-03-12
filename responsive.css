@@ -1,0 +1,1053 @@
+/**** TABLET ****/
+
+
+@media screen and (max-width: 768px) {
+    
+#title {
+    font-size: 50px;
+    margin-top: 40px;
+    
+}
+    
+#egg_counter {
+    width: 150px;
+    height: 150px;
+    right: 150px;
+    font-size: 110px;
+}
+
+  
+.popup {
+    width: 80%;
+}  
+    
+.popup h2 {
+    font-size: 28px;
+} 
+
+.popup p {
+    font-size: 18px;
+}    
+    
+.btn {
+    padding: 0.5em 1em;
+    width: 270px;
+    height: 80px;
+    margin: 10px;
+    font-size: 28px;
+}
+  
+
+/****** BLUE SKY ******/
+
+.cloud1 {
+    width: 200px;
+    position: absolute; 
+    top: 0;
+    left: 0px;
+    animation: Cloud1 20s infinite;
+}
+
+@keyframes Cloud1 {
+    0% {transform:translateX(-300px)}
+    100% {transform:translateX(800px)}
+}
+
+.cloud2 {
+    width: 80px;
+    position: absolute;
+    top: 100px;
+    left: -100px;
+    animation: Cloud2 15s infinite;
+}
+
+@keyframes Cloud2 {
+    0% {transform:translateX(-100px)}
+    100% {transform:translateX(900px)}
+
+}
+
+.cloud3 {
+    width: 70px;
+    position: absolute;
+    top: 150px;
+    left: -150px;
+    animation: Cloud3 30s infinite;
+}
+
+@keyframes Cloud3 {
+    0% {transform:translateX(-550px)}
+    100% {transform:translateX(1200px)}
+
+
+}
+
+.cloud4 {
+    width: 130px;
+    position: absolute;
+    top: 100px;
+    left: -300px;
+    animation: Cloud3 24s infinite;
+}
+
+@keyframes Cloud4 {
+    0% {transform:translateX(-600px)}
+    100% {transform:translateX(1400px)}
+}
+
+
+
+
+/****** NIGHT SKY ******/
+
+#moon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 40px;
+    top: 30px;
+}
+
+    
+    
+/******   FIRST    *******/    
+    
+  
+#flag_left {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    
+}
+
+#flag_right {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -20px;
+    right: 0;
+    z-index: 999;
+}
+    
+    
+#grass_left1 {
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    bottom: -105px;;
+}
+    
+#kinoko {
+    width: 200px;
+    height: 210px;
+    position: absolute;
+    right: -30px;;
+    bottom: 200px;
+    z-index: 990;
+}
+    
+#castle {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 250px;
+    top: 100px;
+    z-index: 0;
+}  
+    
+#carrot {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: -50px;
+    top: 150px;
+}
+    
+#rabbit1 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    right: 120px;;
+    bottom: 120px;
+}  
+    
+#rabbit_basket {
+    width: 80px; 
+    height: 80px;
+    position: absolute;
+    right: 190px;
+    bottom: 140px;
+} 
+    
+#rabbit2 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 405px;;
+    bottom:330px;
+}
+
+.rabbit2 {
+    animation: Rabbit2 3s infinite;           
+}
+
+@keyframes Rabbit2 {
+    0% {transform:translate(0, 0);}
+    50%{transform:translate(0, 50px);}
+    100% {transform:translate(0, 0);}
+}
+
+#hole1 {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    right: 390px;;
+    bottom:250px;
+    z-index: 999;
+}
+    
+#eggrabbit1 {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 200px;
+    top:-100px;
+}
+
+
+.eggrabbit1 {
+    animation: Eggrabbit1 10s infinite;       
+}
+
+@keyframes Eggrabbit1 {
+    0% {transform: translate(300px, -100px) rotateZ(0deg)}
+    50% {transform: translate(-100px, 300px) rotateZ(0deg)}
+    75% {transform: translate(-1000px, 300px) rotateZ(0deg)}
+    100% {transform: translate(-1000px, -100px) rotateZ(0deg)}
+}
+
+#egg1  {
+    width: 150px;
+    height: 150px;
+   position: absolute;
+    left: 50px;
+    bottom: 70px; 
+}
+    
+#egg2  {
+    width: 150px;
+    height: 150px;
+   position: absolute;
+    left: 150px;
+    bottom: 10px; 
+}
+    
+#egg3  {
+    width: 120px;
+    height: 120px;
+   position: absolute;
+    left: 0px;
+    top: 130px;
+}    
+    
+
+/****** SECOND PAGE ******/
+
+
+#back_flowers{
+    display: none;
+}
+
+#phone_flowers{
+    display: block;
+    width: 750px;
+    height: 400px;
+    position: absolute;
+    left:-50px;
+    
+}
+
+
+#grass_right2 {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    right: -70px;
+    bottom: -155px;
+}
+
+#grass_left2 {
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    left: -70px;
+    bottom: -345px;
+}
+
+#kinoko2 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: -30px;
+    bottom: 50px;
+}
+
+#rabbit3 {
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    left: 70px;
+    bottom: 150px;
+    animation-name: shake2;
+    animation: shake2  infinite;
+    animation-duration: 3s;
+}
+
+
+
+#rabbit5 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 90px;
+    bottom: 150px;
+}
+
+#rabbit4 {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    right: 120px;;
+    bottom:290px;
+}
+
+
+#hole2 {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    right: 100px;;
+    bottom:230px;
+}
+
+#bud {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom:570px;
+    left: 250px;
+}
+
+#bloom {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom:500px;
+    left: 250px;
+}
+
+#bloom_egg {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top:50px;
+    left: 290px;
+}
+
+#eggrabbit2 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 320px;
+    bottom:100px;
+}
+
+
+
+#eggrabbit3 {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: -50px;
+    bottom:400px;
+}
+
+.eggrabbit3 {
+    animation: Eggrabbit3 8s infinite;   
+}
+
+@keyframes Eggrabbit3 {
+    0% {transform:translateX(100px)}
+    100% {transform:translateX(-1200px)}
+}
+
+
+#egg10 {
+    width: 80p;
+    height: 80px;
+    position: absolute;
+    left:150px;
+    bottom: 600px;
+}
+        
+    
+ /****** CONGLATURATIONS ******/
+
+#basket {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    bottom: 150px;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.dancing_bunny {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+   
+}
+
+.dancing_bunny2 {
+    width: 200px;
+    height: 200px;
+    bottom:100px; 
+}
+    
+.dance_bunny1 {
+    left: 50px;
+}
+
+.dance_bunny2 {
+    right: 20px;
+}    
+ 
+.dancing_eggrabbit {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 70px;
+
+} 
+    
+.dancing_eggrabbit_LEFT{
+    left: 150px;
+}
+
+.dancing_eggrabbit_RIGHT{
+    right: 150px;
+}    
+    
+}
+
+
+
+
+
+/**** SMART PHONE ****/
+
+@media screen and (max-width: 480px) {
+  
+/**** FIRST ****/    
+    
+    #title {
+    font-size: 28px;
+    margin-top: 90px;
+    
+}
+    
+    .title span {
+    margin: 0 -3px;   
+}
+    
+    #subtitle {
+    font-size: 16px;
+    margin-top: -10px;
+}
+    
+    
+    #backgroundImage {
+    width: 100%;
+    height: 100%;
+    background-image: url(img/phone_bg.svg);
+}
+    
+    
+    #egg_counter {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    left: -80px;
+    bottom: 130px;
+    z-index: 999;
+    text-align: center;
+    margin: auto;
+    font-size: 60px;
+    color: #626466;
+    font-family: 'Quicksand', sans-serif;
+}
+       
+    #grass_left1 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    left: 0;
+    bottom: -100px;;
+}
+
+
+#grass_right1 {
+    width: 380px;
+    height: 380px;
+    position: absolute;
+    right: 0;
+    bottom: -160px;
+}
+
+#castle {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 180px;
+    top: 150px;
+}
+
+
+#carrot {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    left: -50px;
+    top: 150px;
+}
+
+
+#flag_left {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    
+}
+
+#flag_right {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: -20px;
+    right: 0;
+    z-index: 999;
+}
+
+#kinoko {
+    width: 100px;
+    height: 90px;
+    position: absolute;
+    right: -30px;;
+    bottom: 220px;
+    z-index: 990;
+}
+
+#rabbit1 {
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    right: 0px;;
+    bottom: 80px;
+    z-index: 998;
+}
+
+#rabbit_basket {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 50px;
+    bottom: 100px;
+    z-index: 999;
+}
+
+
+#rabbit2 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 140px;
+    bottom: 295px;
+}
+    
+.rabbit2 {
+    animation: Rabbit2 3s infinite;           
+}
+
+@keyframes Rabbit2 {
+    0% {transform:translate(0, 0);}
+    50%{transform:translate(0, 25px);}
+    100% {transform:translate(0, 0);}
+}
+
+#hole1 {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: 130px;
+    bottom:250px;
+    z-index: 999;
+}
+
+#eggrabbit1 {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0px;
+    top:-100px;
+}
+    
+.eggrabbit1 {
+    animation: Eggrabbit1 10s infinite;       
+}
+
+@keyframes Eggrabbit1 {
+    0% {transform: translate(300px, -100px) rotateZ(0deg)}
+    50% {transform: translate(-100px, 300px) rotateZ(0deg)}
+    75% {transform: translate(-1000px, 300px) rotateZ(0deg)}
+    100% {transform: translate(-1000px, -100px) rotateZ(0deg)}
+}
+
+
+#egg1  {
+    width: 100px;
+    height: 100px;
+   position: absolute;
+    left: 30px;
+    bottom: 30px; 
+}
+
+#egg2  {
+    width: 100px;
+    height: 100px;
+   position: absolute;
+    left: 85px;
+    bottom: -10px; 
+}
+
+#egg3  {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0px;
+    top: 160px; 
+    z-index: 999;
+}
+    
+    
+    /****** BLUE SKY ******/
+
+.cloud1 {
+    width: 150px;
+    position: absolute; 
+    top: 0;
+    left: 0px;
+    animation: Cloud1 35s infinite;
+}
+
+@keyframes Cloud1 {
+    0% {transform:translateX(-150px)}
+    100% {transform:translateX(480px)}
+}
+
+.cloud2 {
+    width: 50px;
+    position: absolute;
+    top: 100px;
+    left: -100px;
+    animation: Cloud2 30s infinite;
+}
+
+@keyframes Cloud2 {
+    0% {transform:translateX(-50px)}
+    100% {transform:translateX(600px)}
+
+}
+
+.cloud3 {
+    width: 125px;
+    position: absolute;
+    top: 100px;
+    left: -250px;
+    animation: Cloud3 37s infinite;
+}
+
+@keyframes Cloud3 {
+    0% {transform:translateX(-200px)}
+    100% {transform:translateX(600px)}
+
+
+}
+
+.cloud4 {
+    width: 75px;
+    position: absolute;
+    top: 50px;
+    left: -300px;
+    animation: Cloud4 33s infinite;
+}
+
+@keyframes Cloud4 {
+    0% {transform:translateX(-250px)}
+    100% {transform:translateX(700px)}
+}
+    
+ 
+/****** NIGHT SKY ******/
+
+#moon {
+    position: absolute;
+    right: 100px;
+    top: 45px;
+    width: 50px;
+    height:50px;
+}
+
+.moon {
+    animation: 
+        moonMove 2s infinite;          
+}  
+    
+@keyframes moonMove {
+    0% {transform:translate(0, 0);}
+    50%{transform:translate(0, -5px);}
+    100% {transform:translate(0, 0);}
+} 
+    
+#star1_1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+#star1_2 {
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    width: 100%;
+} 
+    
+#star2_1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+#star2_2 {
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    width: 100%;
+}    
+    
+    
+    
+/****    POP UP    ****/    
+
+.popup {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background: #f7f7f2;
+    padding: 5% 10%;
+    width: auto;
+    height: 60%;
+    width: 80%;
+}
+    
+.popup h2 {
+    font-size: 18px;
+}
+    
+.popup p {
+    font-size: 13px;
+} 
+    
+    
+/***    ボタン    ***/    
+    
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+}  
+    
+#button_container {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}    
+    
+/*** ❌ボタン ***/
+
+    
+.close:before, .close:after{
+    content:''; 
+    height:5px; 
+    width:30px; 
+    display:block; 
+    background-color:#7a7a7a; 
+    border-radius:10px;
+    transform:rotate(-45deg);
+}  
+    
+.close:after{
+    transform:rotate(45deg);
+}
+
+.close:hover:before{
+    background-color:#afafaf; 
+}
+
+.close:hover:after{
+    background-color:#afafaf; 
+}
+ 
+    
+    
+/**** SECOND ****/     
+
+
+#back_flowers{
+    display: none;
+}
+
+#phone_flowers{
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 220px;  
+}    
+
+
+#grass_right2 {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: -35px;
+    bottom: -150px;
+}
+
+#grass_left2 {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: -70px;
+    bottom: -200px;
+}
+
+#kinoko2 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: -25px;
+    bottom: -30px;
+}
+
+#rabbit3 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 140px;
+    bottom: 130px;
+}
+
+#rabbit5 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 170px;
+    bottom: 130px;
+}    
+
+
+#rabbit4 {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 250px;;
+    bottom:240px;
+    animation-name: shake3;
+    animation: shake3  infinite;
+    animation-duration: 3s;
+    transition: bottom 1s;
+    
+}
+
+@keyframes shake3 {
+    0% {transform: translate(0px, 0px) rotateZ(0deg)}
+    25% {transform: translate(4px, 4px) rotateZ(2deg)}
+    50% {transform: translate(0px, 0px) rotateZ(0deg)}
+    75% {transform: translate(4px, 4px) rotateZ(-2deg)}
+    100% {transform: translate(0px, 0px) rotateZ(0deg)}
+}
+
+
+#hole2 {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: 240px;
+    bottom:220px;
+    z-index: 999;
+}
+
+#bud {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 450px;
+    left: 150px;
+}
+
+#bloom {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 425px;
+    left: 140px;
+}
+
+#bloom_egg {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 110px;
+    left: 160px;
+}
+
+
+#eggrabbit2 {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 280px;
+    bottom:130px;
+}
+
+#eggrabbit3 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0px;
+    bottom:300px;
+}
+
+.eggrabbit3 {
+    animation: Eggrabbit3 8s infinite;   
+}
+
+@keyframes Eggrabbit3 {
+    0% {transform:translateX(100px)}
+    100% {transform:translateX(-600px)}
+}
+
+
+#egg10 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 90px;
+    bottom: 480px;
+    
+    
+}
+    
+
+/****** CONGLATURATIONS ******/
+
+#conglatu {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 1500px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    transition: bottom 3s; 
+    
+}
+
+#basket {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    bottom: 200px;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.dancing_bunny {
+    width: 130px;
+    height: 130px;
+    position: absolute; 
+    
+}
+
+
+.dancing_bunny2 {
+    width: 130px;
+    height: 130px;
+    bottom: 150px; 
+}
+
+
+.dance_bunny1 {
+    left: 0px;
+}
+
+.dance_bunny2 {
+    right: 0px;
+}
+
+.dance_bunny3 {
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 100px
+}
+
+.dancing_eggrabbit {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 170px;
+}
+
+
+.dancing_eggrabbit_LEFT{
+    left: 100px;
+}
+
+.dancing_eggrabbit_RIGHT{
+    right: 100px;
+}    
+      
+}
+
+

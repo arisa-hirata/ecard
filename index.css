@@ -1,0 +1,984 @@
+/*////////////////////// GENERAL /////////////////////////*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Coiny', cursive;
+    
+}
+
+#backgroundImage {
+    width: 100%;
+    height: 100%;
+    background-image: url(img/bg.svg);
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #B4DCF2;
+}
+
+.background_color {
+    animation: bg-color 3s forwards;
+}
+
+@keyframes bg-color {
+    0%{background-color: #B4DCF2}
+    100%{background-color: #4d4270}
+}
+
+.background_color2 {
+    animation: bg-color2 3s forwards;
+}
+
+@keyframes bg-color2 {
+    0%{background-color: #4d4270}
+    100%{background-color: #B4DCF2}
+}
+
+#header {
+    text-align: center;
+    color: #5CB15D;
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    font-size: 60px;
+    margin: auto;
+  
+    
+}
+
+#title {
+    font-size: 60px;
+    margin-top: 40px;
+    
+}
+
+/********************  TITLE ANIMATION   ********************/
+
+
+
+.title span {
+    margin: 0 -8px;   
+}
+
+.text1 {
+   animation: loading 2.3s infinite alternate; 
+}
+.text2 {
+    animation: loading 2.3s infinite alternate; 
+    animation-delay: .1s;
+}
+.text3 {
+    animation: loading 2.3s infinite alternate; 
+    animation-delay: .2s;
+}
+.text4 {
+    animation: loading 2.3s infinite alternate; 
+    animation-delay: .3s;
+}
+.text5 {
+    animation: loading 2.3s infinite alternate; 
+    animation-delay: .4s;
+}
+.text7 {
+    animation: loading 2.3s infinite alternate; 
+    animation-delay: .5s;
+}
+.text8 {
+    animation: loading 2.3s infinite alternate; 
+    animation-delay: .6s;
+}
+.text9 {
+    animation: loading 2.3s infinite alternate; 
+    animation-delay: .7s;
+}
+.text10 {
+    animation: loading 2.3s infinite alternate; 
+    animation-delay: .8s;
+}
+.text11 {
+    animation: loading 2.3s infinite alternate; 
+    animation-delay: .9s;
+}
+.text12 {
+    animation: loading 2.3s infinite alternate; 
+    animation-delay: 1s;
+}
+.text13 {
+    animation: loading 2.3s infinite alternate; 
+    animation-delay: 1.1s;
+}
+
+
+@keyframes loading {
+      
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+
+
+#subtitle {
+    font-size: 28px;
+    margin-top: -20px;
+}
+
+.subtitle{
+    animation: Subtitle infinite;
+    animation-duration: 2.5s; 
+}
+
+@keyframes Subtitle {
+    0% {opacity: 0.3}
+    50%{opacity: 1}
+    100% {opacity: 0.3}
+}
+
+
+.pointer{
+    cursor: pointer;
+}
+
+
+/****** BLUE SKY ******/
+
+.cloud1 {
+    width: 300px;
+    position: absolute; 
+    top: 0;
+    left: 0px;
+    animation: Cloud1 35s infinite;
+}
+
+@keyframes Cloud1 {
+    0% {transform:translateX(-300px)}
+    100% {transform:translateX(1800px)}
+}
+
+.cloud2 {
+    width: 100px;
+    position: absolute;
+    top: 100px;
+    left: -100px;
+    animation: Cloud2 30s infinite;
+}
+
+@keyframes Cloud2 {
+    0% {transform:translateX(-100px)}
+    100% {transform:translateX(1800px)}
+
+}
+
+.cloud3 {
+    width: 250px;
+    position: absolute;
+    top: 100px;
+    left: -550px;
+    animation: Cloud3 37s infinite;
+}
+
+@keyframes Cloud3 {
+    0% {transform:translateX(-550px)}
+    100% {transform:translateX(2000px)}
+
+
+}
+
+.cloud4 {
+    width: 150px;
+    position: absolute;
+    top: 50px;
+    left: -600px;
+    animation: Cloud3 33s infinite;
+}
+
+@keyframes Cloud4 {
+    0% {transform:translateX(-600px)}
+    100% {transform:translateX(2200px)}
+}
+
+
+
+
+/****** NIGHT SKY ******/
+
+#moon {
+    position: absolute;
+    right: 100px;
+    top: 50px;
+}
+
+.star1 {
+    
+    position: absolute;
+    top: 100px;
+    animation: Star1 infinite; 
+    animation-duration: 2.5s; 
+}
+
+@keyframes Star1 {
+    0% {opacity: 0.3}
+    50% {opacity: 1}
+    100% {opacity: 0.3}
+}
+
+.star2 {
+    animation: Star2 infinite; 
+    animation-duration: 2.5s; 
+}
+    
+@keyframes Star2 {
+    0% {opacity: 1}
+    50% {opacity: 0.3}
+    100% {opacity: 1}
+}
+
+.moon {
+    animation: 
+        moonMove 2s infinite,
+        moonFadeIn 1s forwards;          
+}
+
+@keyframes moonFadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@keyframes moonMove {
+    0% {transform:translate(0, 0);}
+    50%{transform:translate(0, -10px);}
+    100% {transform:translate(0, 0);}
+}
+
+#star1_1 {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+}
+
+#star1_2 {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+}
+
+#star2_1 {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+}
+
+#star2_2 {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+}
+
+.stars {
+    display: none;
+}
+
+/****** EGG COUNTER ******/
+
+#egg_counter {
+    width: 200px;
+    height: 200px;
+    border-radius: 7%;
+    background-color: #F9F9E4;
+    box-shadow: 7px 7px 7px 0 #888888;
+    position: fixed;
+    right: 90px;
+    bottom: 70px;
+    z-index: 999;
+    text-align: center;
+    margin: auto;
+    font-size: 150px;
+    color: #626466;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+
+/****** IMAGES ******/
+
+/****** BACKGROUND MOVING ******/
+
+#first_right {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    transition: right 1s;
+    z-index: 997;
+}
+
+#first_left {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    transition: left 1s;
+    z-index: 997;
+}
+
+#second_stage {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: -1500px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    transition: bottom 1s;
+}
+
+
+
+#grass_left1 {
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    bottom: -105px;;
+}
+
+
+#grass_right1 {
+    width: 800px;
+    height: 650px;
+    position: absolute;
+    right: 0;
+    bottom: -255px;
+    z-index: 998;
+}
+
+#castle {
+    width: 210px;
+    height: 210px;
+    position: absolute;
+    left: 400px;
+    top: 100px;
+    z-index: 0;
+}
+
+.castle {
+     display: inline-block;
+     animation: Castle .5s  infinite;
+}
+
+@keyframes Castle {
+    0% {transform: translate(0px, 0px) rotateZ(0deg)}
+    25% {transform: translate(5px, 0px) rotateZ(4deg)}
+    50% {transform: translate(0px, 0px) rotateZ(0deg)}
+    75% {transform: translate(5px, 0px) rotateZ(-4deg)}
+    100% {transform: translate(0px, 0px) rotateZ(0deg)}
+}
+
+
+.shaking {
+     display: inline-block;
+     animation: Shaking 1s  infinite;
+}
+
+@keyframes Shaking {
+    0% {transform: translate(0px, 0px) rotateZ(0deg)}
+    25% {transform: translate(5px, 5px) rotateZ(4deg)}
+    50% {transform: translate(0px, 5px) rotateZ(0deg)}
+    75% {transform: translate(5px, 0px) rotateZ(-4deg)}
+    100% {transform: translate(0px, 0px) rotateZ(0deg)}
+}
+
+
+
+#carrot {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: -50px;
+    top: 50px;
+}
+
+
+#flag_left {
+    width: 370px;
+    height: 370px;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    
+}
+
+#flag_right {
+    width: 370px;
+    height: 370px;
+    position: absolute;
+    top: -20px;
+    right: 0;
+    z-index: 999;
+}
+
+#kinoko {
+    width: 350px;
+    height: 320px;
+    position: absolute;
+    right: -30px;;
+    bottom: 200px;
+    z-index: 990;
+}
+
+#rabbit1 {
+    width: 430px;
+    height: 430px;
+    position: absolute;
+    right: 220px;;
+    bottom: 120px;
+    z-index: 998;
+}
+
+#rabbit_basket {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    right: 320px;
+    bottom: 135px;
+    z-index: 999;
+}
+
+.rabbit1 {
+    animation: Rabbit1  infinite;
+    animation-duration: 3s;
+}
+
+@keyframes Rabbit1 {
+    0% {transform: translate(0px, 0px) rotateZ(0deg)}
+    25% {transform: translate(2px, 5px) rotateZ(3deg)}
+    50% {transform: translate(0px, 2px) rotateZ(0deg)}
+    75% {transform: translate(2px, 0px) rotateZ(-3deg)}
+    100% {transform: translate(0px, 0px) rotateZ(0deg)}
+}
+
+
+
+#rabbit2 {
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    right: 730px;;
+    bottom:300px;
+}
+
+.rabbit2 {
+    animation: Rabbit2 3s infinite;           
+}
+
+@keyframes Rabbit2 {
+    0% {transform:translate(0, 0);}
+    50%{transform:translate(0, 90px);}
+    100% {transform:translate(0, 0);}
+}
+
+#hole1 {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    right: 690px;;
+    bottom:150px;
+    z-index: 999;
+}
+
+#eggrabbit1 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 550px;
+    top:-100px;
+}
+
+
+.eggrabbit1 {
+    animation: Eggrabbit1 10s infinite;       
+}
+
+@keyframes Eggrabbit1 {
+    0% {transform: translate(300px, -100px) rotateZ(0deg)}
+    50% {transform: translate(-100px, 350px) rotateZ(0deg)}
+    75% {transform: translate(-1000px, 350px) rotateZ(0deg)}
+    100% {transform: translate(-1000px, -100px) rotateZ(0deg)}
+}
+
+
+
+#egg1  {
+   position: absolute;
+    left: 85px;
+    bottom: 95px; 
+}
+
+#egg2  {
+   position: absolute;
+    left: 190px;
+    bottom: 10px; 
+}
+
+#egg3  {
+   position: absolute;
+    left: 80px;
+    top: 80px; 
+    z-index: 999;
+}
+
+
+
+
+/****** SECOND PAGE ******/
+
+
+#back_flowers{
+    height: 1200px;
+    width: 1200px;
+    position: absolute;
+    left: 30px;
+    bottom: -50px;
+    
+}
+
+
+#grass_right2 {
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    right: -70px;
+    bottom: -250px;
+}
+
+#grass_left2 {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    left: -70px;
+    bottom: -400px;
+}
+
+#kinoko2 {
+    position: absolute;
+    left: -50px;
+    bottom: -30px;
+}
+
+#rabbit3 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    left: 150px;;
+    bottom: 200px;
+    animation-name: shake2;
+    animation: shake2  infinite;
+    animation-duration: 3s;
+}
+
+
+
+#rabbit5 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    left: 250px;;
+    bottom: 200px;
+    display: none;
+}
+
+#hunting img: first-child {
+    display: inline;
+}
+
+#rabbit4 {
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    right: 395px;
+    bottom:200px;
+    animation-name: shake2;
+    animation: shake2  infinite;
+    animation-duration: 3s;
+    transition: bottom 1s;
+    
+}
+
+@keyframes shake2 {
+    0% {transform: translate(0px, 0px) rotateZ(0deg)}
+    25% {transform: translate(7px, 7px) rotateZ(7deg)}
+    50% {transform: translate(0px, 0px) rotateZ(0deg)}
+    75% {transform: translate(0px, 0px) rotateZ(-7deg)}
+    100% {transform: translate(0px, 0px) rotateZ(0deg)}
+}
+
+
+#hole2 {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    right: 380px;;
+    bottom:130px;
+    z-index: 999;
+}
+
+#bud {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    bottom:610px;
+    left: 545px;
+}
+
+#bloom {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    bottom:560px;
+    left: 520px;
+}
+
+#bloom_egg {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top:65px;
+    left: 570px;
+}
+
+.bloom {
+    display: none;
+}
+
+.fadeout {
+  animation : fadeOut 3s;
+  animation-fill-mode: both;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fadein {
+  animation : fadeIn 5s;
+  animation-fill-mode: both;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+#eggrabbit2 {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    left: 520px;
+    bottom:200px;
+}
+
+.eggrabbit2 {
+    display: inline-block;
+    animation: hurueru .1s  infinite;
+}
+
+@keyframes hurueru {
+    0% {transform: translate(0px, 0px) rotateZ(0deg)}
+    25% {transform: translate(2px, 2px) rotateZ(1deg)}
+    50% {transform: translate(0px, 2px) rotateZ(0deg)}
+    75% {transform: translate(2px, 0px) rotateZ(-1deg)}
+    100% {transform: translate(0px, 0px) rotateZ(0deg)}
+}
+
+
+#eggrabbit3 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 0px;
+    bottom:420px;
+}
+
+.eggrabbit3 {
+    animation: Eggrabbit3 8s infinite;   
+}
+
+@keyframes Eggrabbit3 {
+    0% {transform:translateX(100px)}
+    100% {transform:translateX(-1500px)}
+}
+
+
+#egg10 {
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    left: 380px;
+    bottom: 650px;
+    
+    
+}
+    
+
+
+/****** POP-UP WINDOW ******/
+
+#popup_bg {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+/*** ❌ボタン ***/
+
+.close:before, .close:after{
+    content:''; 
+    height:5px; 
+    width:30px; 
+    display:block; 
+    background-color:#7a7a7a; 
+    border-radius:10px;
+    position:absolute; 
+    top:35px; 
+    right:25px; 
+    transform:rotate(-45deg);
+}
+
+.close:after{
+    transform:rotate(45deg);
+}
+
+.close:hover:before{
+    background-color:#afafaf; 
+}
+
+.close:hover:after{
+    background-color:#afafaf; 
+}
+
+
+
+.popup {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+  background: #f7f7f2;
+  padding: 40px 70px;;
+  width: auto;
+  height: 400px;
+  max-width: 700px;
+    border-radius: 20px;
+    color: #626466;
+    z-index: 999;
+    display: none;
+    
+}
+
+.popup h2 {
+    font-size: 35px;
+    color: #5CB15D;
+    text-align: center;
+}
+
+.popup p {
+    font-size: 22px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 10px;
+    width: 270px;
+    height: 80px;
+    margin: 50px;
+    font-size: 30px;
+}
+
+.btn:active {
+    transform: translateY(4px);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+}
+
+#yes_btn {
+    background-color: #eda6ae;
+}
+
+#no_btn {
+    background-color: #5db9b4;
+}
+
+#button_container {
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+}
+
+
+
+
+
+/****** CONGLATURATIONS ******/
+
+#conglatu {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 1500px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    transition: bottom 3s; 
+    
+}
+
+#basket {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    bottom: 150px;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.dancing_bunny {
+    width: 280px;
+    height: 280px;
+    position: absolute;
+   
+    
+}
+.dancing1 {
+    animation-name: dancing;
+    animation: dancing infinite;
+    animation-duration: 2s; 
+}
+
+@keyframes dancing {
+    0% {opacity: 1}
+    50% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.dancing2{
+    animation-name: dancing2;
+    animation: dancing2 infinite; 
+    animation-duration: 2s; 
+    
+}
+
+@keyframes dancing2 {
+    0% {opacity: 0}
+    50% {opacity: 1}
+    100% {opacity: 0}
+}
+
+.dancing_bunny2 {
+    width: 280px;
+    height: 280px;
+    bottom: 250px; 
+}
+
+
+.dance_bunny1 {
+    left: 150px;
+}
+
+.dance_bunny2 {
+    right: 120px;
+}
+
+.dance_bunny3 {
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 50px
+}
+
+.dancing_eggrabbit {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 120px;
+}
+
+
+.dancing_eggrabbit_LEFT{
+    left: 300px;
+}
+
+.dancing_eggrabbit_RIGHT{
+    right: 300px;
+}
+
+/*************   SAKURA  *****************/
+
+.hana{
+	position:absolute;
+    top:-30px;
+    left:-30px
+	height:0;
+	width:0;
+	border: 10px solid pink;
+    border-radius: 15px;
+	border-top-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.hana::after{
+	content:"";
+	display:block;
+	position:absolute;
+	top:-7px;
+	left:-7px;
+	height:0;
+	width:0;
+	border: 10px solid pink;
+	border-radius: 15px;
+	border-top-right-radius: 0;
+	border-bottom-left-radius: 0;
+	transform: rotate(15deg);
+}
+
+
+
+
