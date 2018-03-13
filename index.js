@@ -55,7 +55,7 @@ var EggNum = 1,
     egg9 = document.getElementById("bud"),
     bloom = document.getElementById("bloom"),
     BloomEgg = document.getElementById("bloom_egg"),
-    popup9 = document.getElementById("popup8"),
+    popup9 = document.getElementById("popup9"),
 
     Close10 = document.getElementById("close10"),
     egg10 = document.getElementById("rabbit4"),
