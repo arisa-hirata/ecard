@@ -263,7 +263,7 @@ egg6.onclick = function() {
         setTimeout(function(){
         Dance.play(); 
         }, 3000); 
-        
+        Conglatu.style.display = "block";
 }   
 }
 
@@ -305,7 +305,8 @@ egg7.onclick = function() {
         }, 1000);
         setTimeout(function(){
         Dance.play(); 
-        }, 3000);     
+        }, 3000);  
+	Conglatu.style.display = "block";	
 }   
 }
 
@@ -347,7 +348,8 @@ egg8.onclick = function() {
         }, 1000); 
         setTimeout(function(){
         Dance.play(); 
-        }, 3000); 
+        }, 3000);
+	Conglatu.style.display = "block";    
 }       
         
 }
@@ -402,6 +404,7 @@ egg9.onclick = function() {
         setTimeout(function(){
         Dance.play(); 
         }, 3000); 
+	Conglatu.style.display = "block";    
 }       
 }
 
@@ -450,7 +453,8 @@ egg10.onclick = function() {
         }, 1000); 
         setTimeout(function(){
         Dance.play(); 
-        }, 3000);     
+        }, 3000); 
+	Conglatu.style.display = "block";    
 }       
 }
 
