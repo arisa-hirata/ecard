@@ -559,6 +559,9 @@ body {
     
 }
 
+#phone_flowers{
+    display: none;
+}
 
 #grass_right2 {
     width: 800px;
