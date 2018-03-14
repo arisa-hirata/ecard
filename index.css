@@ -867,7 +867,7 @@ body {
     left: 0;
     margin: auto;
     transition: bottom 3s; 
-    
+    display: none;
 }
 
 #basket {
