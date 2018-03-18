@@ -250,7 +250,7 @@ egg6.onclick = function() {
         setTimeout(function(){
            header.style.display = "block"; 
         }, 1000);
-        Title.innerHTML = "CONGLATURATIONS!";
+        Title.innerHTML = "CONGRATULATIONS!";
         Subtitle.innerHTML = "You Found 10 Eggs!";
         Title.classList.add("subtitle");
         Subtitle.classList.add("subtitle");
