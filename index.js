@@ -12,7 +12,7 @@ var EggNum = 1,
     Conglatu = document.getElementById("conglatu"),
 
     PopBack = document.getElementById("popup_bg"),
-    
+
     audio = new Audio("sound/pom.mp3"),
     Nintendo = new Audio("sound/NintendoSwitch.mp3"),
     Dance = new Audio("sound/dance.mp3"),
@@ -72,7 +72,7 @@ function EggCount() {
 }
 
 function EggGone(id) {
-    document.getElementById(id).style.display = "none"; 
+    document.getElementById(id).style.display = "none";
 }
 
 function Close() {
@@ -86,29 +86,29 @@ egg1.addEventListener('click', function(){
     audio.play();
     popup1.style.display = "block";
     EggGone("egg1");
-    
+
         Close1.onclick = function() {
             popup1.style.display = "none";
             Close();
     }
-        
+
     if(EggCounter.innerHTML == 5) {
         Moving.play();
         bgR.style.right = "-1500px";
         bgL.style.left = "-1500px";
-        bgSecond.style.bottom = "0px";
-        setTimeout(function(){ 
+        bgSecond.style.bottom = "100px";
+        setTimeout(function(){
         bgR.style.display = "none";
      }, 1100);
-        setTimeout(function(){ 
+        setTimeout(function(){
         bgL.style.display = "none";
      }, 1100);
-        setTimeout(function(){ 
+        setTimeout(function(){
         header.style.display = "none";
      }, 1100);
-        
-        
-}    
+
+
+}
 },);
 
 egg2.onclick = function() {
@@ -116,24 +116,24 @@ egg2.onclick = function() {
     audio.play();
     popup2.style.display = "block";
     EggGone("egg2");
-    
+
         Close2.onclick = function() {
             popup2.style.display = "none";
             Close();
-    } 
-        
+    }
+
     if(EggCounter.innerHTML == 5) {
         Moving.play();
         bgR.style.right = "-1500px";
         bgL.style.left = "-1500px";
         bgSecond.style.bottom = "0px";
-        setTimeout(function(){ 
+        setTimeout(function(){
         bgR.style.display = "none";
      }, 1100);
-        setTimeout(function(){ 
+        setTimeout(function(){
         bgL.style.display = "none";
      }, 1100);
-        setTimeout(function(){ 
+        setTimeout(function(){
         header.style.display = "none";
      }, 1100);
 }
@@ -143,24 +143,24 @@ egg3.onclick = function() {
     EggCount();
     audio.play();
     popup3.style.display = "block";
-    EggGone("egg3"); 
+    EggGone("egg3");
         Close3.onclick = function() {
             popup3.style.display = "none";
             Close();
-    }  
-        
+    }
+
     if(EggCounter.innerHTML == 5) {
         Moving.play();
         bgR.style.right = "-1500px";
         bgL.style.left = "-1500px";
         bgSecond.style.bottom = "0px";
-        setTimeout(function(){ 
+        setTimeout(function(){
         bgR.style.display = "none";
      }, 1100);
-        setTimeout(function(){ 
+        setTimeout(function(){
         bgL.style.display = "none";
      }, 1100);
-        setTimeout(function(){ 
+        setTimeout(function(){
         header.style.display = "none";
      }, 1100);
 }
@@ -172,57 +172,57 @@ egg4.onclick = function() {
     audio.play();
     popup4.style.display = "block";
     EggGone("hole1");
-    EggGone("rabbit2"); 
+    EggGone("rabbit2");
         Close4.onclick = function() {
             popup4.style.display = "none";
             Close();
-    } 
-        
+    }
+
     if(EggCounter.innerHTML == 5) {
         Moving.play();
         bgR.style.right = "-1500px";
         bgL.style.left = "-1500px";
         bgSecond.style.bottom = "0px";
-        setTimeout(function(){ 
+        setTimeout(function(){
         bgR.style.display = "none";
      }, 1100);
-        setTimeout(function(){ 
+        setTimeout(function(){
         bgL.style.display = "none";
      }, 1100);
-        setTimeout(function(){ 
+        setTimeout(function(){
         header.style.display = "none";
      }, 1100);
 }
 
-}    
+}
 
 egg5.onclick = function() {
     EggCount();
     audio.play();
     popup5.style.display = "block";
-    EggGone("eggrabbit1"); 
+    EggGone("eggrabbit1");
         Close5.onclick = function() {
             popup5.style.display = "none";
             Close();
-    } 
-        
+    }
+
     if(EggCounter.innerHTML == 5) {
         Moving.play();
         bgR.style.right = "-1500px";
         bgL.style.left = "-1500px";
         bgSecond.style.bottom = "0px";
-        setTimeout(function(){ 
+        setTimeout(function(){
         bgR.style.display = "none";
      }, 1100);
-        setTimeout(function(){ 
+        setTimeout(function(){
         bgL.style.display = "none";
      }, 1100);
-        setTimeout(function(){ 
+        setTimeout(function(){
         header.style.display = "none";
      }, 1100);
 }
 
-}   
+}
 
 egg6.onclick = function() {
     EggCount();
@@ -232,39 +232,39 @@ egg6.onclick = function() {
         Close6.onclick = function() {
             popup6.style.display = "none";
             Close();
-    } 
-        
+    }
+
     if(EggCounter.innerHTML == 10) {
-        
+
         bgSecond.classList.add("fadeout")
-        setTimeout(function(){ 
+        setTimeout(function(){
         bgSecond.style.display = "none";
      }, 500);
-        
+
         EggCounter.classList.add("fadeout")
         setTimeout(function() {
             EggCounter.style.display = "none";
         }, 1000);
-        
+
         header.classList.add("fadein");
         setTimeout(function(){
-           header.style.display = "block"; 
+           header.style.display = "block";
         }, 1000);
-        Title.innerHTML = "CONGRATULATIONS!";
+        Title.innerHTML = "CONGLATURATIONS!";
         Subtitle.innerHTML = "You Found 10 Eggs!";
         Title.classList.add("subtitle");
         Subtitle.classList.add("subtitle");
         header.style.marginTop = "50px";
         header.style.zIndex = "999";
-        
-        setTimeout(function(){ 
-        Conglatu.style.bottom = "0";    
+
+        setTimeout(function(){
+        Conglatu.style.bottom = "0";
         }, 1000,);
         setTimeout(function(){
-        Dance.play(); 
-        }, 3000); 
+        Dance.play();
+        }, 3000);
         Conglatu.style.display = "block";
-}   
+}
 }
 
 egg7.onclick = function() {
@@ -275,23 +275,23 @@ egg7.onclick = function() {
         Close7.onclick = function() {
             popup7.style.display = "none";
             Close();
-    } 
-        
+    }
+
         if(EggCounter.innerHTML == 10) {
-        
+
         bgSecond.classList.add("fadeout")
-        setTimeout(function(){ 
+        setTimeout(function(){
         bgSecond.style.display = "none";
      }, 500);
-            
+
             EggCounter.classList.add("fadeout")
         setTimeout(function() {
             EggCounter.style.display = "none";
         }, 1000);
-        
+
         header.classList.add("fadein");
         setTimeout(function(){
-           header.style.display = "block"; 
+           header.style.display = "block";
         }, 1000);
         Title.innerHTML = "CONGLATURATIONS!";
         Subtitle.innerHTML = "You Found 10 Eggs!";
@@ -299,15 +299,15 @@ egg7.onclick = function() {
         Subtitle.classList.add("subtitle");
         header.style.marginTop = "50px";
         header.style.zIndex = "999";
-            
-        setTimeout(function(){ 
+
+        setTimeout(function(){
         Conglatu.style.bottom = "0";
         }, 1000);
         setTimeout(function(){
-        Dance.play(); 
-        }, 3000);  
-	Conglatu.style.display = "block";	
-}   
+        Dance.play();
+        }, 3000);
+        Conglatu.style.display = "block";
+}
 }
 
 egg8.onclick = function() {
@@ -318,23 +318,23 @@ egg8.onclick = function() {
         Close8.onclick = function() {
             popup8.style.display = "none";
             Close();
-    }  
-    
+    }
+
     if(EggCounter.innerHTML == 10) {
-        
+
         bgSecond.classList.add("fadeout")
-        setTimeout(function(){ 
+        setTimeout(function(){
         bgSecond.style.display = "none";
      }, 500);
-        
+
         EggCounter.classList.add("fadeout")
         setTimeout(function() {
             EggCounter.style.display = "none";
         }, 1000);
-        
+
         header.classList.add("fadein");
         setTimeout(function(){
-           header.style.display = "block"; 
+           header.style.display = "block";
         }, 1000);
         Title.innerHTML = "CONGLATURATIONS!";
         Subtitle.innerHTML = "You Found 10 Eggs!";
@@ -342,54 +342,54 @@ egg8.onclick = function() {
         Subtitle.classList.add("subtitle");
         header.style.marginTop = "50px";
         header.style.zIndex = "999";
-        
-        setTimeout(function(){ 
-        Conglatu.style.bottom = "0";  
-        }, 1000); 
+
         setTimeout(function(){
-        Dance.play(); 
+        Conglatu.style.bottom = "0";
+        }, 1000);
+        setTimeout(function(){
+        Dance.play();
         }, 3000);
-	Conglatu.style.display = "block";    
-}       
-        
+        Conglatu.style.display = "block";
+}
+
 }
 
 egg9.onclick = function() {
     EggCounter.innerHTML = EggNum++;
     audio.play();
     popup9.style.display = "block";
-    
-    setTimeout(function(){ 
+
+    setTimeout(function(){
         PopBack.style.display = "block";
      }, 1500);
-    
+
     EggGone("bud");
     bloom.style.display = "block";
     BloomEgg.style.display = "block";
     BloomEgg.classList.add("fadeout");
-    setTimeout(function(){ 
+    setTimeout(function(){
         EggGone("bloom_egg");
     }, 3000);
         Close9.onclick = function() {
             popup9.style.display = "none";
             Close();
     }
-    
+
     if(EggCounter.innerHTML == 10) {
-        
+
         bgSecond.classList.add("fadeout")
-        setTimeout(function(){ 
+        setTimeout(function(){
         bgSecond.style.display = "none";
      }, 500);
-        
+
         EggCounter.classList.add("fadeout")
         setTimeout(function() {
             EggCounter.style.display = "none";
         }, 1000);
-        
+
         header.classList.add("fadein");
         setTimeout(function(){
-           header.style.display = "block"; 
+           header.style.display = "block";
         }, 1000);
         Title.innerHTML = "CONGLATURATIONS!";
         Subtitle.innerHTML = "You Found 10 Eggs!";
@@ -397,15 +397,16 @@ egg9.onclick = function() {
         Subtitle.classList.add("subtitle");
         header.style.marginTop = "50px";
         header.style.zIndex = "999";
-        
-        setTimeout(function(){ 
+
+        setTimeout(function(){
         Conglatu.style.bottom = "0";
         }, 1000);
         setTimeout(function(){
-        Dance.play(); 
-        }, 3000); 
-	Conglatu.style.display = "block";    
-}       
+        Dance.play();
+        }, 3000);
+
+        Conglatu.style.display = "block";
+}
 }
 
 egg10.onclick = function() {
@@ -424,23 +425,23 @@ egg10.onclick = function() {
         Close10.onclick = function() {
             popup10.style.display = "none";
             Close();
-    }  
-    
+    }
+
     if(EggCounter.innerHTML == 10) {
-        
+
         bgSecond.classList.add("fadeout")
-        setTimeout(function(){ 
+        setTimeout(function(){
         bgSecond.style.display = "none";
      }, 500);
-        
+
         EggCounter.classList.add("fadeout")
         setTimeout(function() {
             EggCounter.style.display = "none";
         }, 1000);
-        
+
         header.classList.add("fadein");
         setTimeout(function(){
-           header.style.display = "block"; 
+           header.style.display = "block";
         }, 1000);
         Title.innerHTML = "CONGLATURATIONS!";
         Subtitle.innerHTML = "You Found 10 Eggs!";
@@ -448,14 +449,15 @@ egg10.onclick = function() {
         Subtitle.classList.add("subtitle");
         header.style.marginTop = "50px";
         header.style.zIndex = "999";
-        setTimeout(function(){ 
-        Conglatu.style.bottom = "0";
-        }, 1000); 
         setTimeout(function(){
-        Dance.play(); 
-        }, 3000); 
-	Conglatu.style.display = "block";    
-}       
+        Conglatu.style.bottom = "0";
+        }, 1000);
+        setTimeout(function(){
+        Dance.play();
+        }, 3000);
+
+        Conglatu.style.display = "block";
+}
 }
 
 basket.onclick = function() {
@@ -466,7 +468,7 @@ basket.onclick = function() {
             LastMessage.style.display = "none";
             Close();
     }
-       
+
 }
 
 //SAKURA
@@ -477,9 +479,9 @@ header.onclick = function() {
     Nintendo.play();
     if (basket.classList.contains("cherry")) {
     var divSakura = document.createElement('div');	/* ぶち込むdiv */
-	divSakura.id = "sakura";	
+	divSakura.id = "sakura";
 
-	
+
 	divSakura.innerHTML = '<style>'+
 	'html,body{overflow-x:hidden;}'+
 	'.hana{'+
@@ -516,7 +518,7 @@ header.onclick = function() {
 	'.y4{animation:v4 9s infinite;animation:v4 9s infinite;}'+
 	'.y5{animation:v5 8s infinite;animation:v5 8s infinite;}'+
 	'.y6{animation:v6 8s infinite;animation:v6 8s infinite;}'+
-	
+
 	'@keyframes v1{'+
 		'from{transform: rotate(0deg) scale(1);}'+
 		'50%{transform: rotate(270deg) scale(1);}'+
@@ -553,96 +555,66 @@ header.onclick = function() {
 	document.body.appendChild(divSakura);
 
 	var windowHeight = window.innerHeight;
-	var scroll = document.documentElement.scrollTop || document.body.scrollTop;	
-	var styleZindex = 9999;	
+	var scroll = document.documentElement.scrollTop || document.body.scrollTop;
+	var styleZindex = 9999;
 	var styleTop = new Array();
 	var styleLeft = new Array();
-	var yuragi = new Array();	
-	var sokudo = new Array();	
-	var hanabiraId = new Array();	
-	var yuragiConut = new Array();	
-	var kazeCount = 0;	
+	var yuragi = new Array();
+	var sokudo = new Array();
+	var hanabiraId = new Array();
+	var yuragiConut = new Array();
+	var kazeCount = 0;
 
-	
+
 	document.addEventListener('scroll', function(){ scroll = document.documentElement.scrollTop || document.body.scrollTop; }, false);
 
-	
+
 	for(var i = 0; i < 50; i++){
 		var divHanabira = document.createElement('div');
-		divHanabira.id = 'hanabira' + i;	
-		styleTop[i] = Math.random() * -1000 + scroll;	
-		styleLeft[i] = Math.random() * window.innerWidth;	
-		divHanabira.setAttribute('style', 'z-index:' + (styleZindex + i) + ';top:' + styleTop[i] + 'px;left:' + styleLeft[i] + 'px;');	
-		var hanabiraClass = 'hana t' + (Math.floor(Math.random() * 6) + 1) + ' y' + (Math.floor(Math.random() * 6) + 1);	
-		divHanabira.setAttribute('class', hanabiraClass);	
+		divHanabira.id = 'hanabira' + i;
+		styleTop[i] = Math.random() * -1000 + scroll;
+		styleLeft[i] = Math.random() * window.innerWidth;
+		divHanabira.setAttribute('style', 'z-index:' + (styleZindex + i) + ';top:' + styleTop[i] + 'px;left:' + styleLeft[i] + 'px;');
+		var hanabiraClass = 'hana t' + (Math.floor(Math.random() * 6) + 1) + ' y' + (Math.floor(Math.random() * 6) + 1);
+		divHanabira.setAttribute('class', hanabiraClass);
 		divSakura.appendChild(divHanabira);
-		yuragi[i] = Math.random() * 40 + 5;	
-		sokudo[i] = Math.random() * 5 + 2;	
+		yuragi[i] = Math.random() * 40 + 5;
+		sokudo[i] = Math.random() * 5 + 2;
 		hanabiraId[i] = document.getElementById('hanabira' + i);
-		yuragiConut[i] = 0;	
+		yuragiConut[i] = 0;
 	}
 
-	
+
 	FlowerStorm = setInterval(function(){
 
-		
+
 		for(var i = 0; i < 50; i++){
-			if(styleTop[i] < scroll + windowHeight - 40){	
-				if(yuragi[i] >= yuragiConut[i]){	
+			if(styleTop[i] < scroll + windowHeight - 40){
+				if(yuragi[i] >= yuragiConut[i]){
 					styleLeft[i] = styleLeft[i] + 0.5 + Math.random() * 0.5;
-				}else{	
+				}else{
 					styleLeft[i] = styleLeft[i] - 0.5 - Math.random() * 0.5;
 				}
-				if((yuragi[i] * 2) <= yuragiConut[i]){	
-					yuragiConut[i] = 0;	
+				if((yuragi[i] * 2) <= yuragiConut[i]){
+					yuragiConut[i] = 0;
 				}
-			}else{	
-				styleTop[i] = scroll - 40;	
-				styleLeft[i] = Math.random() * window.innerWidth;	
+			}else{
+				styleTop[i] = scroll - 40;
+				styleLeft[i] = Math.random() * window.innerWidth;
 			}
 
-            /* 横風 */  
 
-			if(kazeCount >= 100 && kazeCount <= 110){ styleLeft[i] = styleLeft[i] + 1; }
-			else if(kazeCount >= 111 && kazeCount <= 120){ styleLeft[i] = styleLeft[i] + 3; }
-			else if(kazeCount >= 121 && kazeCount <= 129){ styleLeft[i] = styleLeft[i] + 5; }
-			else if(kazeCount >= 130 && kazeCount <= 137){ styleLeft[i] = styleLeft[i] + 7; }
-			else if(kazeCount >= 138 && kazeCount <= 144){ styleLeft[i] = styleLeft[i] + 9; }
-			else if(kazeCount >= 145 && kazeCount <= 300){ styleLeft[i] = styleLeft[i] + 11; }
-			else if(kazeCount >= 301 && kazeCount <= 311){ styleLeft[i] = styleLeft[i] + 9; }
-			else if(kazeCount >= 312 && kazeCount <= 322){ styleLeft[i] = styleLeft[i] + 7; }
-			else if(kazeCount >= 323 && kazeCount <= 335){ styleLeft[i] = styleLeft[i] + 5; }
-			else if(kazeCount >= 336 && kazeCount <= 349){ styleLeft[i] = styleLeft[i] + 3; }
-			else if(kazeCount >= 350 && kazeCount <= 354){ styleLeft[i] = styleLeft[i] + 1; }
-
-
-			else if(kazeCount >= 500 && kazeCount <= 510){ styleLeft[i] = styleLeft[i] - 1; }
-			else if(kazeCount >= 511 && kazeCount <= 520){ styleLeft[i] = styleLeft[i] - 3; }
-			else if(kazeCount >= 521 && kazeCount <= 529){ styleLeft[i] = styleLeft[i] - 5; }
-			else if(kazeCount >= 530 && kazeCount <= 537){ styleLeft[i] = styleLeft[i] - 7; }
-			else if(kazeCount >= 538 && kazeCount <= 544){ styleLeft[i] = styleLeft[i] - 9; }
-			else if(kazeCount >= 545 && kazeCount <= 700){ styleLeft[i] = styleLeft[i] - 11; }
-			else if(kazeCount >= 701 && kazeCount <= 711){ styleLeft[i] = styleLeft[i] - 9; }
-			else if(kazeCount >= 712 && kazeCount <= 722){ styleLeft[i] = styleLeft[i] - 7; }
-			else if(kazeCount >= 723 && kazeCount <= 735){ styleLeft[i] = styleLeft[i] - 5; }
-			else if(kazeCount >= 736 && kazeCount <= 749){ styleLeft[i] = styleLeft[i] - 3; }
-			else if(kazeCount >= 750 && kazeCount <= 754){ styleLeft[i] = styleLeft[i] - 1; }
-
-			else if(kazeCount >= 900){ kazeCount = 0; }	/* リセット */
-
-/* ここまで横風 */ 
-
-			styleTop[i] = styleTop[i] + sokudo[i];	
-			hanabiraId[i].style.top = styleTop[i] + 'px';	
-			hanabiraId[i].style.left = styleLeft[i] + 'px';	
-			yuragiConut[i]++;	
+			styleTop[i] = styleTop[i] + sokudo[i];
+			hanabiraId[i].style.top = styleTop[i] + 'px';
+			hanabiraId[i].style.left = styleLeft[i] + 'px';
+			yuragiConut[i]++;
 		}
-		kazeCount++;	
+		kazeCount++;
 	}, 45);
-        
-        basket.classList.remove("cherry"); 
-        
-        
+
+        basket.classList.remove("cherry");
+
+
     }   else {
         clearInterval(FlowerStorm);
         basket.classList.add("cherry");
@@ -650,8 +622,8 @@ header.onclick = function() {
         if(target.parentNode) {
             target.parentNode.removeChild(target);
         }
-    } 
-        
+    }
+
 }
 
 
@@ -681,66 +653,66 @@ var moon = document.getElementById("moon");
 
     castle.onclick = function() {
         audio2.play();
-        
+
         if(header.classList.contains("night")) {　
              bg.classList.add("background_color");
              star11.classList.add("star1");
-             setTimeout(function(){ 
-             star11.style.display = "block"; 
+             setTimeout(function(){
+             star11.style.display = "block";
            }, 1000);
              star12.classList.add("star1");
-             setTimeout(function(){ 
-             star12.style.display = "block"; 
+             setTimeout(function(){
+             star12.style.display = "block";
            }, 1000);
              star21.classList.add("star2");
-             setTimeout(function(){ 
-             star21.style.display = "block"; 
+             setTimeout(function(){
+             star21.style.display = "block";
            }, 1000);
              star22.classList.add("star2");
-             setTimeout(function(){ 
-             star22.style.display = "block"; 
+             setTimeout(function(){
+             star22.style.display = "block";
            }, 1000);
              moon.classList.add("moon");
              setTimeout(function() {
-             moon.style.display = "block"; 
-             }, 800); 
+             moon.style.display = "block";
+             }, 800);
              header.style.color = "#fff";
             header.classList.remove("night");
             bg.classList.remove("background_color2");
-            
+
             star11.classList.remove("fadeout");
             star12.classList.remove("fadeout");
             star21.classList.remove("fadeout");
             star22.classList.remove("fadeout");
             moon.classList.remove("fadeout");
-            
+
         } else {
             bg.classList.remove("background_color");
             header.classList.add("night");
             bg.classList.add("background_color2");
             star11.classList.add("fadeout");
-             setTimeout(function(){ 
-             star11.style.display = "none"; 
+             setTimeout(function(){
+             star11.style.display = "none";
            }, 1000);
              star12.classList.add("fadeout");
-             setTimeout(function(){ 
-             star12.style.display = "none"; 
+             setTimeout(function(){
+             star12.style.display = "none";
            }, 1000);
              star21.classList.add("fadeout");
-             setTimeout(function(){ 
-             star21.style.display = "none"; 
+             setTimeout(function(){
+             star21.style.display = "none";
            }, 1000);
              star22.classList.add("fadeout");
-             setTimeout(function(){ 
-             star22.style.display = "none"; 
+             setTimeout(function(){
+             star22.style.display = "none";
            }, 1000);
              moon.classList.add("fadeout");
              setTimeout(function() {
-             moon.style.display = "none"; 
-             }, 800); 
+             moon.style.display = "none";
+             }, 800);
             header.style.color = "#5CB15D";
         }
-       
+
 }
 
 
@@ -755,22 +727,10 @@ hunting.addEventListener("mouseover", function() {
     hunting.style.display = "none";
     audio3.play();
     catching.style.display = "block";
-    
+
 });
 
 catching.addEventListener("mouseout", function() {
     catching.style.display = "none";
     hunting.style.display = "block";
 });
-
-
-
-
-
-
-	
- 	
-
-
-          
-    
