@@ -7,5 +7,9 @@ This is an interactive e-card for Easter. There are 10 eggs, some hidden others 
 # Scene2
 ![Screen-Recording-2019-07-01-at-12 34 38-PM](https://user-images.githubusercontent.com/32582917/60462007-0a19b980-9bfd-11e9-9e16-3a0ecf842407.gif)
 
+# You found all 10 eggs!!
+![Screen-Recording-2019-07-01-at-12 39 58-PM](https://user-images.githubusercontent.com/32582917/60462308-cb383380-9bfd-11e9-9f4e-8e858e2ccec8.gif)
+
+
 
 
